@@ -1,0 +1,119 @@
+{
+  "easycom": {
+      "autoscan": true,
+      "custom": {
+        "^mp-html-(.*)?": "mp-html/components/mp-html-$1/mp-html-$1.vue"
+      }
+    },
+  "pages": [
+    {
+      "path": "pages/user/login",
+      "style": {
+        "navigationBarTitleText": "用户登录"
+      }
+    },
+    {
+      "path": "pages/user/register",
+      "style": {
+        "navigationBarTitleText": "用户注册"
+      }
+    },
+    {
+      "path": "pages/user/enhance",
+      "style": {
+        "navigationBarTitleText": "图像增强"
+      }
+    },
+    {
+      "path": "pages/user/ai-diagnosis",
+      "style": {
+        "navigationBarTitleText": "AI诊断"
+      }
+    },
+    {
+      "path": "pages/user/ai-chat",
+      "style": {
+        "navigationBarTitleText": "AI对话",
+		"usingComponents": {
+				  "mp-html": "mp-html"
+				}
+      }
+    },
+    {
+      "path": "pages/user/profile",
+      "style": {
+        "navigationBarTitleText": "个人信息"
+      }
+    },
+    {
+      "path": "pages/admin/login",
+      "style": {
+        "navigationBarTitleText": "管理员登录"
+      }
+    },
+    {
+      "path": "pages/admin/dashboard",
+      "style": {
+        "navigationBarTitleText": "数据统计"
+      }
+    },
+    {
+      "path": "pages/admin/user-management",
+      "style": {
+        "navigationBarTitleText": "用户管理"
+      }
+    },
+    {
+    	"path" : "pages/user/ai-diagnosisRecode",
+    	"style" : 
+    	{
+    		"navigationBarTitleText" : ""
+    	}
+    },
+    {
+    	"path" : "pages/user/ai-diagnosisRecodeDetail",
+    	"style" : 
+    	{
+    		"navigationBarTitleText" : ""
+    	}
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "黑色素瘤检测平台",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/user/ai-diagnosis",
+        "iconPath": "static/icon-diagnosis.svg",
+        "selectedIconPath": "static/icon-diagnosis.svg",
+        "text": "AI诊断"
+      },
+      {
+        "pagePath": "pages/user/enhance",
+        "iconPath": "static/icon-enhance.svg",
+        "selectedIconPath": "static/icon-enhance.svg",
+        "text": "图像增强"
+      },
+      {
+        "pagePath": "pages/user/ai-chat",
+        "iconPath": "static/icon-chat.svg",
+        "selectedIconPath": "static/icon-chat.svg",
+        "text": "AI对话"
+      },
+      {
+        "pagePath": "pages/user/profile",
+        "iconPath": "static/icon-profile.svg",
+        "selectedIconPath": "static/icon-profile.svg",
+        "text": "我的"
+      }
+    ]
+  }
+}
